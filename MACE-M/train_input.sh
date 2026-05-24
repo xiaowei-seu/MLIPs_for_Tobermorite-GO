@@ -1,0 +1,30 @@
+mace_run_train --name="MACE_model" \
+        --train_file="./train.xyz" \
+        --valid_file="./test.xyz" \
+        --energy_key="energy" \
+        --forces_key="forces" \
+        --E0s="average" \
+        --model="MACE" \
+        --num_interactions=2 \
+        --num_channels=64 \
+        --max_L=1 \
+        --max_ell=3 \
+        --correlation=3 \
+        --r_max=6.0 \
+        --forces_weight=10 \
+        --energy_weight=1 \
+        --lr=0.001 \
+        --batch_size=8 \
+        --valid_batch_size=2 \
+        --max_num_epochs=100 \
+        --start_swa=80 \
+        --scheduler_patience=15 \
+        --patience=20 \
+        --eval_interval=1 \
+        --ema \
+        --swa \
+        --error_table='PerAtomMAE' \
+        --default_dtype="float64"\
+        --device=cuda \
+        --seed=123 \
+        --restart_latest
