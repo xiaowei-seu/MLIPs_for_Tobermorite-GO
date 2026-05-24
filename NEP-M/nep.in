@@ -1,0 +1,22 @@
+# type
+type 5 Ca Si O H C
+
+# NN
+version    4
+zbl        2
+use_typewise_cutoff_zbl 0.7
+cutoff     6 5
+n_max      4 4
+basis_size 8 8
+l_max      4 2 1
+neuron     30
+
+# train
+lambda_1   0
+lambda_e   1
+lambda_f   1
+lambda_v   0
+batch      1000
+population 50
+save_potential 50000 0
+generation 100000
