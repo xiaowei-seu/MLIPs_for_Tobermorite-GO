@@ -1,1 +1,1 @@
-Atomin configurations for tobermorite 14Å, GO, and tobermorite/GO composite.
+Atomin configurations for tobermorite, GO, and tobermorite/GO composite.
